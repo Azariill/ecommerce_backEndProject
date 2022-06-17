@@ -15,7 +15,12 @@ Tag.init(
     tag_name:{
       type: DataTypes.STRING
       
+    },
+    tag_id:{
+      type: DataTypes.STRING,
+      
     }
+
   },
   {
     sequelize,
