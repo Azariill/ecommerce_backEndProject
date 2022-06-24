@@ -16,10 +16,7 @@ Tag.init(
       type: DataTypes.STRING
       
     },
-    tag_id:{
-      type: DataTypes.STRING,
-      
-    }
+  
 
   },
   {

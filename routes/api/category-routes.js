@@ -58,7 +58,7 @@ router.post('/', (req, res) => {
     category_name : req.body.category_name
   })
   .then(request => res.json({
-    mesage: 'Your category has been added succesfully'}))
+    message: 'Your category has been added successfully'}))
   .catch(err =>{
     console.log(err);
     res.status(400).json(err);
@@ -83,7 +83,7 @@ router.put('/:id', (req, res) => {
       res.status(404).json({message: 'There is no category found at this id'});
       return;
     }
-    res.json({message: `You have succesfully updated this category`});
+    res.json({message: `You have successfully updated this category`});
   })
   .catch(err => {
     console.log(err);
@@ -103,7 +103,7 @@ router.delete('/:id', (req, res) => {
       res.status(404).json({ message: 'No category found with that id please try again.'});
       return;
     }
-    res.json({message: 'Category has been delete succesfully'})
+    res.json({message: 'Category has been delete successfully'})
   })
     .catch(err =>{
       console.log(err);
